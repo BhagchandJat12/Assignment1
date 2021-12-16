@@ -1,6 +1,7 @@
 import java.util.*;
 public class GenerateID{
 public static void main(String[] args) {
+    Date date=new Date();
     Random random= new Random();
     String ID="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz";
     StringBuilder sb= new StringBuilder();
@@ -11,6 +12,7 @@ public static void main(String[] args) {
         st.append(ID.charAt(random.nextInt(ID.length())));
         sm.append(ID.charAt(random.nextInt(ID.length())));
     }
+    System.out.println(date);
     System.out.println(sb.toString()+"-"+st.toString()+"-"+sm.toString());
 }
 }
