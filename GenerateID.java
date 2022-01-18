@@ -13,6 +13,7 @@ public static void main(String[] args) {
         sm.append(ID.charAt(random.nextInt(ID.length())));
     }
     System.out.println(date);
+    System.out.println("Bhagchand jat");
     System.out.println(sb.toString()+"-"+st.toString()+"-"+sm.toString());
 }
 }
